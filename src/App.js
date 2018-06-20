@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import Person from './person/Person.js'
-import Person2 from './person/Person2.js'
 
 import './App.css'
 import Trans from 'react-transition-group/Transition'
@@ -19,31 +18,7 @@ otherstate:'vishesh is the protagnist',
 status:true,
 Showperson:false,
 showblock:false,
-per:[
-  {name:"vishesh",
-  id:"123"
 }
-]
-}
-
-colorHandler = (event,id)=>{
-
- const colorid=this.state.per.findIndex(p=>{
-   return p.id === id
-
- })
-  const person1={...this.state.per[colorid]}
-
- person1.name=event.target.value;
-
-
-
-console.log(this.state.person1);
-
-
-}
-
-
 
  eventNameHandler = (newname,newname2) =>{
  //console.log("was clicked")
@@ -118,7 +93,6 @@ console.log(this.state.showblock);
 
 
   render() {
-
 
 
     const classes=[];
@@ -231,8 +205,8 @@ style.backgroundColor= "red"
 
 
   <Trans in={this.state.showblock}
-   timeout={200}
-   mountOnEnter
+   timeout={100}
+ mountOnEnter
    unmountOnExit>
   {state=> (
  <div
@@ -242,9 +216,9 @@ opacity:.25,
 width:1000,
 height:1000,
 margin:'auto',
-transition:'transform 1s ease-out',
-
+transition:'transform .10s ease-out',
 transform: state === 'entering' ? 'translateX(-150%)' : 'translateX(0%)',
+transform: state === 'entered' ? 'translateX(0%)' : 'translateX(-150%)',
 
 //transform: 'translateX(-100%)',
 
@@ -259,8 +233,6 @@ transform: state === 'entering' ? 'translateX(-150%)' : 'translateX(0%)',
 
 {Persons}
 
-
-<Person2 name={this.state.per.name} change={(event)=>this.colorHandler(event,this.state.per.id)} />
       </div>
     );
   }
