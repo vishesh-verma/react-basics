@@ -1,8 +1,9 @@
 {
-  "name": "my-app",
+  "name": "react-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "prop-types": "^15.6.2",
     "radium": "^0.24.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
