@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import './Person.css';
-import Trans from 'react-transition-group/Transition'
 
 
 

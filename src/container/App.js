@@ -1,9 +1,7 @@
 import React, { PureComponent } from 'react';
 
-import Person from '../components/persons/person/Person.js'
 import Persons from '../components/persons/Persons'
 import './App.css'
-import Trans from 'react-transition-group/Transition'
 import Cockpit from '../components/cockpit/cockpit'
 class App extends PureComponent {
 
