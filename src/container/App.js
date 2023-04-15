@@ -11,7 +11,7 @@ constructor(props){
 
   this.state={
     person:[
-      {id:'x1122', name:"vishesh verma",age:21},
+      {id:'x1122', name:"vaibhav kadwey",age:21},
       {id:'y2211',name:"nidhi verma",age:21},
       {id:'h2232',name:"saloni verma",age:22}
   ],
